@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Zinsrechner</title>
+    <link rel="stylesheet" href="/zinsDesign.css">
+</head>
+<body>
+
+<div class="right-container">
+    <h1>Zinsrechner</h1>
+    <div class="right">
+        <form method="get" action="/zins">
+
+            <label>Anfangskapital</label>
+            <input type="text" name="Anfangskapital" required th:value="${AK}">
+
+            <br>
+            <br>
+
+            <label>Laufzeit</label>
+            <input type="text" name="Laufzeit" required th:value="${LZ}">
+
+            <br>
+            <br>
+
+            <label>Zinssatz</label>
+            <input type="text" name="Zinssatz" required th:value="${ZS}">
+
+            <br>
+            <br>
+
+            <button type="submit">Aktualisieren</button>
+
+        </form>
+
+</div>
+</div>
+<div class="left">
+    <h1>Ergebnis</h1>
+    <p>
+        Bei einer Laufzeit von <span th:text="${LZ}"> </span>  Jahren
+        bei einem Konstanten Zinssatz von <span th:text="${ZS}"> </span> %
+        und einem Anfangskapital von <span th:text="${AK}"> </span> Euro
+        beträgt das Endkapital Euro <span th:text="${EK}"> </span>
+
+    </p>
+
+</div>
+
+</body>
+</html>

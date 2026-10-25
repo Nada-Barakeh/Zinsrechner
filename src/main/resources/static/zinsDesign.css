@@ -1,0 +1,44 @@
+body{
+    display:flex;
+     gap:40px; /* macht space zw den right-seite & left-seite */
+}
+
+.right{
+    float:right;
+    width:400px;
+    border:1px solid gray;
+    margin:20px;
+    padding:20px; /* innere verschiebung ins border in alle  direction */
+}
+
+.right-container  {
+    margin-top: 0;
+    margin-bottom: 0;
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    float:left;
+    width:400px;
+    border:1px solid gray;
+    margin-top:10px;
+    margin-bottom:10px;
+    padding:50px;
+}
+
+button{
+    color:black;
+    cursor: pointer;
+}
+
+button:hover{
+    background:blue;
+    color:white;
+}
+
+
+
+
+
